@@ -13,7 +13,7 @@ public class AdmRN {
 		dao = new AdmDAO();
 	}
 
-	public List<Adm> listarAdm() {
+	public List<Adm> listaAdm() {
 		return dao.listarAdm();
 	}
 

@@ -14,7 +14,7 @@ public class AdmMB {
 	private Adm adm;
 	private AdmRN admRN;
 	private Long editarId;
-	private List<Adm> listarAdm;
+	private List<Adm> listaAdm;
 
 	@PostConstruct
 	public void Construtor() {
@@ -42,15 +42,15 @@ public class AdmMB {
 	}
 
 	public List<Adm> getListaAdm() {
-		if (listarAdm == null) {
-			listarAdm = admRN.listarAdm();
+		if (listaAdm == null) {
+			listaAdm = admRN.listaAdm();
 
 		}
-		return listarAdm;
+		return listaAdm;
 	}
 
 	public void setListaAdm(List<Adm> listarAdm) {
-		this.listarAdm = listarAdm;
+		this.listaAdm = listarAdm;
 	}
 
 	public void carregarAdm(ComponentSystemEvent event) {
@@ -63,14 +63,14 @@ public class AdmMB {
 	public String excluir(String id) {
 		Long idExcluir = Long.parseLong(id);
 		admRN.excluir(idExcluir);
-		listarAdm = null;
+		listaAdm = null;
 		return "";
 
 	}
 
 	public String salvar() {
 		admRN.salvar(adm);
-		listarAdm = null;
+		listaAdm = null;
 		return "";
 	}
 }
