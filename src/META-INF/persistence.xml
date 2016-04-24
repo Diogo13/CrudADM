@@ -11,7 +11,7 @@
 		<properties>
 			<!-- dados da conexao -->
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/intro_jpa_db" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/bancoDeDados_adm" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password" value="" />
 

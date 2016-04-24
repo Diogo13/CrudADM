@@ -5,27 +5,27 @@
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:f="http://xmlns.jcp.org/jsf/core">
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="pt-br" />
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge/">
+		<meta name="viewport" content="width=device-width, initial-scale=1/">
 <link href="css/bootstrap.min.css" rel="stylesheet" />
-<ui:composition>
-	<div class="page-header">
-		<h1>
-			Usuário <small>Novo</small>
-		</h1>
-	</div>
-	<div class="col-md-2 col-md-5">
-		<label for="exampleInputPassword1">Usuario</label> <select
-			class="form-control">
-			<option>Administrador</option>
-			<option>Professor</option>
-			<option>Aluno</option>
-			<option>Outros</option>
-		</select>
-	</div>
-	<ui:define name="header">
-		<form>
+<script src="js/bootstrap.min.js" />
+<scriptsrc="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+</script> <ui:composition template="">
+	<ui:define name="conteudo">
+		<div class="col-md-2 col-md-5">
+			<label for="exampleInputPassword1">Usuario</label> <select
+				class="form-control">
+
+				<option>Administrador</option>
+				<option>Professor</option>
+				<option>Aluno</option>
+				<option>Outros</option>
+			</select>
+		</div>
+	</ui:define>
+		<h:form>
 			<div class="col-md-2 col-md-5">
 				<div class="form-group">
 					<label for="exampleInputEmail1">Nome</label> <input type="text"
@@ -62,13 +62,6 @@
 				<button type="button" class="btn btn-success">Enviar</button>
 				<button type="reset" class="btn btn-danger">Limpar</button>
 			</div>
-		</form>
-	</ui:define>
-	<ui:define name="content">
-
-	</ui:define>
-	<ui:define name="footer">
-
-	</ui:define>
+		</h:form>
 </ui:composition>
 </html>
