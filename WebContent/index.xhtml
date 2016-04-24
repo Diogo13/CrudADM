@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<ui:composition>
+	<div class="page-header">
+		<h1>
+			Usuário <small>Novo</small>
+		</h1>
+	</div>
+	<div class="col-md-2 col-md-5">
+		<label for="exampleInputPassword1">Usuario</label> <select
+			class="form-control">
+			<option>Administrador</option>
+			<option>Professor</option>
+			<option>Aluno</option>
+			<option>Outros</option>
+		</select>
+	</div>
+	<ui:define name="header">
+		<form>
+			<div class="col-md-2 col-md-5">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Nome</label> <input type="text"
+						class="form-control" id="exampleInputEmail1"
+						placeholder="Ex : João" />
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Data de nascimento</label> <input
+						type="text" class="form-control" id="exampleInputEmail1"
+						placeholder="Ex : 11/09/2019" />
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail1">RG</label> <input type="text"
+						class="form-control" id="exampleInputEmail1"
+						placeholder="Ex : 00.00.00" />
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail1">CPF</label> <input type="text"
+						class="form-control" id="exampleInputEmail1"
+						placeholder="Ex : 011.123.123.12" />
+				</div>
+				<div class="form-group">
+					<label for="exampleInputEmail1">Apelido</label> <input type="text"
+						class="form-control" id="exampleInputEmail1"
+						placeholder="Ex : Bolinha" />
+				</div>
+				<div class="form-group">
+					<label for="exampleInputPassword1">Email</label> <input
+						type="email" class="form-control" id="exampleInputPassword1"
+						placeholder="email" />
+				</div>
+
+
+				<button type="button" class="btn btn-success">Enviar</button>
+				<button type="reset" class="btn btn-danger">Limpar</button>
+			</div>
+		</form>
+	</ui:define>
+	<ui:define name="content">
+
+	</ui:define>
+	<ui:define name="footer">
+
+	</ui:define>
+</ui:composition>
+</html>
