@@ -8,17 +8,18 @@ import javax.persistence.Id;
 public class Adm {
 	@Id
 	@GeneratedValue
-	private Long id;
-	private String tipoPessoas;
-	private String nome;
-	private String dataNascimento;
-	private String rg;
-	private String cpf;
-	private String apelido;
-	private String email;
-	private String senha;
-	private String dataCadastro;
-	private String numeroMatricula;
+	private Long id;// ID DO USUARIO
+	private String tipoPessoas;// TIPO DE PESSOA EXEMPLO PROF/ALUNO/ADM
+	private String nome;// NOME DO USUARIO
+	private String dataNascimento;// DATA DE NASCIMENTO
+	private String rg;// RG DO USUARIO
+	private String cpf;// CPF DO USUARIO
+	private String apelido;// APELIDO DO USUARIO
+	private String email;// EMAIL DO USUARIO
+	private String senha;// SENHA DO USUARIO
+	private String dataCadastro;// DATA DE CADASTRO DO USUARIO
+	private String numeroMatricula;// NUMERO DA MATRICULA
+	// METODOS GET E SETS
 
 	public Long getId() {
 		return id;

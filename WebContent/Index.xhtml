@@ -17,6 +17,7 @@
 	<!-- /.navbar -->
 
 	<div class="container">
+
 		<div class="page-header">
 			<h1>
 				Usuário <small>Novo</small>
@@ -34,53 +35,53 @@
 		</div>
 		<div class="col-md-3 col-md-5">
 			<h:form>
-				<h:panelGroup rendered="#{not empty admMB.adm.id}">
+				<h:panelGroup rendered="#{not empty admMb.adm.id}">
 					<div class="form-group id">
 						<label for="exampleId">ID</label>
 						<h:inputText styleClass="form-control" readonly="true"
-							value="#{admMB.adm.id}" id="exampleId" />
+							value="#{admMb.adm.id}" id="exampleId" />
 					</div>
 				</h:panelGroup>
 				<h:inputHidden value="#admMB.adm.id}" />
 				<div class="form-group">
 					<label for="exampleInputNome">Nome</label>
-					<h:inputText styleClass="form-control" value="#{admMB.adm.nome}"
+					<h:inputText styleClass="form-control" value="#{admMb.adm.nome}"
 						id="exampleInputNome" />
 				</div>
 				<div class="form-group">
 					<label for="exampleInputEmail">E-mail</label>
-					<h:inputText styleClass="form-control" value="#{admMB.adm.email}"
+					<h:inputText styleClass="form-control" value="#{admMb.adm.email}"
 						id="exampleInputEmail" />
 				</div>
 				<div class="form-group">
 					<label for="exampleInputDataNascimento">Data de nascimento</label>
 					<h:inputText styleClass="form-control"
 						id="exampleInputDataNascimento"
-						value="#{admMB.adm.dataNascimento}" />
+						value="#{admMb.adm.dataNascimento}" />
 				</div>
 				<div class="form-group">
 					<label for="exampleInputRg">RG</label>
 					<h:inputText styleClass="form-control" id="exampleInputRg"
-						value="#{admMB.adm.rg}" />
+						value="#{admMb.adm.rg}" />
 				</div>
 				<div class="form-group">
 					<label for="exampleInputCpf">CPF</label>
 					<h:inputText styleClass="form-control" id="exampleInputCpf"
-						value="#{admMB.adm.cpf}" />
+						value="#{admMb.adm.cpf}" />
 				</div>
 				<div class="form-group">
 					<label for="exampleInputApelido">Apelido</label>
 					<h:inputText styleClass="form-control" id="exampleInputApelido"
-						value="#{admMB.adm.apelido}" />
+						value="#{admMb.adm.apelido}" />
 				</div>
 				<div class="form-group">
 					<label for="exampleInputPassword1">Senha</label>
 					<h:inputSecret styleClass="form-control" id="exampleInputPassword1"
-						value="#{admMB.adm.senha}" />
+						value="#{admMb.adm.senha}" />
 				</div>
 				<button type="reset" class="btn btn-danger">Limpar</button>
 				<h:commandButton styleClass="btn btn-success"
-					action="#{admMB.salvar}" value="Salvar" />
+					action="#{admMb.salvar}" value="Salvar" />
 			</h:form>
 		</div>
 

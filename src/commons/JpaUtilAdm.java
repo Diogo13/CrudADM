@@ -8,10 +8,12 @@ import javax.persistence.Persistence;
 import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpServletRequest;
 
+@SuppressWarnings("unused")
 public class JpaUtilAdm {
 	private static final String ENTITY_MANAGER = "ENTITY_MANAGER";
 	private static EntityManagerFactory EMF;
 
+	// CRIAÇÃO DO BANCO DE DADOS
 	public static void init() {
 		if (EMF == null) {
 			EMF = Persistence.createEntityManagerFactory("bancoDeDados_adm");

@@ -13,7 +13,7 @@ import javax.servlet.annotation.WebFilter;
 import commons.JpaUtilAdm;
 
 @WebFilter(servletNames = "Faces Servlet")
-public class JpaFilterAdm implements Filter {
+public class JpaFilter implements Filter {
 
 	@Override
 	public void destroy() {

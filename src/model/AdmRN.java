@@ -7,27 +7,31 @@ import entity.Adm;
 
 public class AdmRN {
 
-	private AdmDAO dao;
+	private static AdmDAO dao;
 
 	public AdmRN() {
 		dao = new AdmDAO();
 	}
 
-	public List<Adm> listaAdm() {
-		return dao.listarAdm();
+	// SALVAR UM NOVO USUARIO
+	public static void salvar(Adm adm) {
+		dao.salvar(adm);
+
 	}
 
+	// FAZER A BUSCA DE TODOS OS MEMBROS
 	public Adm buscarPorId(Long Id) {
 		return dao.buscarPorId(Id);
 	}
 
-	public void excluir(Long id) {
-		dao.deletar(id);
-
+	// LISTAR TODOS OS MEMBROS NO BANCO
+	public static List<Adm> listarAdms() {
+		return dao.listarAdms();
 	}
 
-	public void salvar(Adm adm) {
-		dao.salvar(adm);
+	// EXCLUIR ALGUM MEMBRO NO BANDO DE DADOS
+	public void excluir(Long id) {
+		dao.excluir(id);
 
 	}
 
