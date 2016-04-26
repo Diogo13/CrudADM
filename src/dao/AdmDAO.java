@@ -22,7 +22,7 @@ public class AdmDAO {
 
 	// LISTAR TODOS OS MEMBROS
 	public List<Adm> listarAdms() {
-		Query query = getEM().createQuery("From Adm", Adm.class);
+		Query query = getEM().createQuery("from Adm", Adm.class);
 		return query.getResultList();
 
 	}
